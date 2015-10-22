@@ -2,7 +2,7 @@ from markov_lib import notes_from_wav
 import pickle
 
 # Get notes from wav
-wav_list = ["minuet_in_g_major", "fur_elise.wav", "symphony_in_am.wav", "air_on_the_g_string.wav"]
+wav_list = ["minuet_in_g_major.wav", "fur_elise.wav", "symphony_in_am.wav", "air_on_the_g_string.wav"]
 
 notes0 = notes_from_wav(wav_list[0])
 notes1 = notes_from_wav(wav_list[1])
