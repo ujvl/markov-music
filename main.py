@@ -13,9 +13,9 @@ with open("test_notes/notes3", 'rb') as f:
     notes3 = pickle.load(f)
 
 # Calculate stochastic matrix
-matrix = stochastic_matrix(notes0, notes1, notes2, notes3, degree=2)
+matrix = stochastic_matrix(notes1, notes2, notes3, degree=4)
 
-generated_song_notes = random_walk(matrix, len(notes1), notes1, initial_note=[notes1[0], notes1[1]], degree=2)
+generated_song_notes = random_walk(matrix, len(notes1), notes1, initial_note=[notes1[0], notes1[1], notes1[2], notes1[3]], degree=4)
 
 # play song notes!
 playMusic("generated", rate, song_from_notes(generated_song_notes, 0.2))
